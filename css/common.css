@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+/* ? list */
+#categories {
+  list-style: none;
+}
+.item {
+  background: #F6F6FE;
+  padding: 16px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+.item h2 {
+  margin: 0 0 16px 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+.item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.item li {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px 8px;
+  margin-bottom: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+.item li:last-child {
+  margin-bottom: 0;
+}
+
+/* ? Gallery */
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 -12px;
+}
+.gallery > li {
+  width: 33.333%;
+  padding: 0 12px;
+  margin-bottom: 48px;
+}
+.gallery > li > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ? Hello input */
+#name-input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  min-width: 300px;
+  background: transparent;
+}
+#name-input + h1 {
+  font-size: 24px;
+  color: #2E2F42;
+  font-weight: 600;
+}
+
+/* ? Login form */
+.login-form label {
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E2F42;
+}
+.login-form input {
+  display: block;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin: 8px 0;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  min-width: 300px;
+  background: transparent;
+}
+.login-form label:last-of-type input {
+  margin-bottom: 16px;
+}
+.login-form button {
+  padding: 8px 16px;
+  background: #4E75FF;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+.login-form button:hover {
+  background: #6C8CFF;
+}
+
+/* ? BG color widget */
+.widget {
+  text-align: center;
+}
+.widget p {
+  color: #2E2F42;
+  font-size: 16px;
+  line-height: 24px;
+}
+.widget button {
+  padding: 8px 16px;
+  background: #4E75FF;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+.widget button:hover {
+  background: #6C8CFF;
+}
+
+/* ? Create - Destroy */
+#controls {
+  display: flex;
+  background: #F6F6FE;
+  border-radius: 8px;
+  padding: 32px;
+  margin-bottom: 16px;
+}
+#controls input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin: 0 16px 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  outline: none;
+  width: 200px;
+  background: transparent;
+}
+#controls button {
+  padding: 8px 16px;
+  margin-right: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+#controls button[data-create] {
+  background: #4E75FF;
+}
+#controls button[data-create]:hover {
+  background: #6C8CFF;
+}
+#controls button[data-destroy] {
+  background: #FF4E4E;
+}
+#controls button[data-destroy]:hover {
+  background: #FF7070;
+}
+
+#boxes {
+  background: #F6F6FE;
+  border-radius: 8px;
+  padding: 32px 32px 12px 32px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#boxes > div {
+  margin: 0 20px 20px 0;
+}
