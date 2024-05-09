@@ -36,7 +36,7 @@ body {
 .item li {
   font-size: 16px;
   font-weight: 400;
-  padding: 16px 8px;
+  padding: 8px 16px;
   margin-bottom: 8px;
   border: 1px solid #808080;
   border-radius: 4px;
