@@ -3,6 +3,7 @@ const controlsElem = document.querySelector("#controls");
 const inputElem = controlsElem.querySelector("input");
 const createBtn = controlsElem.querySelector("button[data-create]");
 const destroyBtn = controlsElem.querySelector("button[data-destroy]");
+const fragment = document.createDocumentFragment();
 
 createBtn.addEventListener("click", (e) => {
   let input = inputElem.value;
@@ -28,8 +29,10 @@ function createBoxes(amount) {
     widthElem += 10; 
     heightElem += 10;
 
-    containerElem.append(elem);
+    fragment.appendChild(elem);
   }
+  
+  containerElem.appendChild(fragment)
 }
 
 function destroyBoxes() {

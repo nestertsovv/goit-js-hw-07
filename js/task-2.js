@@ -27,6 +27,7 @@ const images = [
 
 // ? Варіант 1 (document.createElement)
 const ulElem = document.querySelector(".gallery");
+const fragment = document.createDocumentFragment();
 
 images.map(image => {
   const liElem = document.createElement("li");
@@ -35,18 +36,20 @@ images.map(image => {
   imageElem.src = image.url;
   imageElem.alt = image.alt;
   liElem.append(imageElem);
-  ulElem.append(liElem);
+  fragment.appendChild(liElem);
 })
+
+ulElem.appendChild(fragment);
 
 
 // ? Варіант 2 (elem.insertAdjacentHTML)
 // const ulElem = document.querySelector(".gallery");
-// const imagesArr = [];
+// let imagesArr = "";
 
 // images.map(image => {
 //   const elem = `<li><img src="${image.url}" alt="${image.alt}" /></li>`;
 
-//   imagesArr.push(elem);
+//   imagesArr += elem;
 // })
 
-// ulElem.insertAdjacentHTML("afterbegin", imagesArr.join(""));
+// ulElem.insertAdjacentHTML("afterbegin", imagesArr);
